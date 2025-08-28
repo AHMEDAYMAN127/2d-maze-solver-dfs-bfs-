@@ -1,7 +1,7 @@
 import tkinter as tk
 from collections import deque
 #open txt file with pathing the name then every row in a list in a list
-f =open("solvable_large_maze.txt")
+f =open(".txt")
 s=f.read()
 f.close()
 s=s.splitlines()
@@ -133,5 +133,6 @@ btn1 = tk.Button(root, text="Solve DFS Step by Step", command=solvedfs)
 btn1.pack(side=tk.LEFT)
 btn2 = tk.Button(root, text="Solve BFS Step by Step", command=solvebfs)
 btn2.pack(side=tk.RIGHT)
+
 
 root.mainloop()
